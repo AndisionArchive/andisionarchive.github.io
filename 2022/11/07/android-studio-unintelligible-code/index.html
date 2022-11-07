@@ -12,12 +12,15 @@
   
   <meta name="description" content="前言在新电脑上安装Android Studio并编译应用时，Build日志输出了一些日志信息，但其中的中文显示为乱码�。
 
+
+
 解决方案
 在Android Studio中选择Help -&amp;gt; Edit Custom VM Options...
  
+ 
 
 在打开的文件末尾添加如下内容
- 1-Dfile.e">
+ 1-Dfi">
   
 
   
@@ -87,10 +90,13 @@
     <div class="entry">
       
         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在新电脑上安装Android Studio并编译应用时，Build日志输出了一些日志信息，但其中的中文显示为乱码<code>�</code>。</p>
-<p><img src="/.com//1.png" alt="乱码图片"></p>
+<!-- ![乱码图片](1.png) -->
+<img src="/2022/11/07/android-studio-unintelligible-code/1.png" class="" title="乱码图片">
+
 <h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><ol>
 <li><p>在Android Studio中选择<code>Help -&gt; Edit Custom VM Options...</code></p>
-<p> <img src="/.com//2.png" alt="选项图片"></p>
+ <!-- ![选项图片](android-studio-unintelligible-code/2.png) -->
+ <img src="/2022/11/07/android-studio-unintelligible-code/2.png" class="" title="选项图片">
 </li>
 <li><p>在打开的文件末尾添加如下内容</p>
  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-Dfile.encoding=UTF-8</span><br></pre></td></tr></table></figure>
